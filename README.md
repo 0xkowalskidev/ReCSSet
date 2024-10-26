@@ -1,0 +1,113 @@
+# Goals
+ - Less then 10KB w/brotli 
+ - Opionated but versatile
+ - Classless
+ - No build/minification
+ - HTML5
+
+# TODO
+- [ ] `<a>` Defines a hyperlink
+- [ ] `<abbr>` Defines an abbreviation or an acronym
+- [ ] `<address>` Defines contact information for the author/owner of a document
+- [ ] `<area>` Defines an area inside an image map
+- [ ] `<article>` Defines an article
+- [ ] `<aside>` Defines content aside from the page content
+- [ ] `<audio>` Defines embedded sound content
+- [ ] `<b>` Defines bold text
+- [ ] `<base>` Specifies the base URL/target for all relative URLs in a document
+- [ ] `<bdi>` Isolates a part of text that might be formatted in a different direction from other text outside it
+- [ ] `<bdo>` Overrides the current text direction
+- [ ] `<blockquote>` Defines a section that is quoted from another source
+- [ ] `<body>` Defines the document's body
+- [ ] `<br>` Defines a single line break
+- [ ] `<button>` Defines a clickable button
+- [ ] `<canvas>` Used to draw graphics on the fly via scripting (usually JavaScript)
+- [ ] `<caption>` Defines a table caption
+- [ ] `<cite>` Defines the title of a work
+- [ ] `<code>` Defines a piece of computer code
+- [ ] `<col>` Specifies column properties for each column within a `<colgroup>` element
+- [ ] `<colgroup>` Specifies a group of one or more columns in a table for formatting
+- [ ] `<data>` Links the given content with a machine-readable translation
+- [ ] `<datalist>` Specifies a list of pre-defined options for input controls
+- [ ] `<dd>` Defines a description/value of a term in a description list
+- [ ] `<del>` Defines text that has been deleted from a document
+- [ ] `<details>` Defines additional details that the user can view or hide
+- [ ] `<dfn>` Specifies a term that is being defined
+- [ ] `<dialog>` Defines a dialog box or window
+- [ ] `<div>` Defines a generic container for flow content
+- [ ] `<dl>` Defines a description list
+- [ ] `<dt>` Defines a term/name in a description list
+- [ ] `<em>` Defines emphasized text
+- [ ] `<embed>` Defines a container for an external resource (e.g., media or plugin)
+- [ ] `<fieldset>` Groups related elements in a form
+- [ ] `<figcaption>` Defines a caption for a `<figure>` element
+- [ ] `<figure>` Specifies self-contained content
+- [ ] `<footer>` Defines a footer for a document or section
+- [ ] `<form>` Defines an HTML form for user input
+- [ ] `<h1>` to `<h6>` Define HTML headings
+- [ ] `<head>` Contains metadata/information for the document
+- [ ] `<header>` Defines a header for a document or section
+- [ ] `<hr>` Represents a thematic break between paragraph-level elements
+- [ ] `<html>` Defines the root of an HTML document
+- [ ] `<i>` Defines text in an alternate voice or mood
+- [ ] `<iframe>` Defines an inline frame
+- [ ] `<img>` Embeds an image into the document
+- [ ] `<input>` Defines an input control
+- [ ] `<ins>` Defines text that has been inserted into a document
+- [ ] `<kbd>` Defines keyboard input
+- [ ] `<label>` Defines a label for an `<input>` element
+- [ ] `<legend>` Defines a caption for a `<fieldset>` element
+- [ ] `<li>` Defines a list item
+- [ ] `<link>` Defines the relationship between a document and an external resource (most commonly used to link to style sheets)
+- [ ] `<main>` Specifies the main content of a document
+- [ ] `<map>` Defines an image map
+- [ ] `<mark>` Defines marked/highlighted text
+- [ ] `<meta>` Defines metadata about an HTML document
+- [ ] `<meter>` Defines a scalar measurement within a known range (a gauge)
+- [ ] `<nav>` Defines a section of navigation links
+- [ ] `<noscript>` Defines an alternate content for users that do not support client-side scripts
+- [ ] `<object>` Defines a container for an external resource
+- [ ] `<ol>` Defines an ordered list
+- [ ] `<optgroup>` Defines a group of related options in a drop-down list
+- [ ] `<option>` Defines an option in a drop-down list
+- [ ] `<output>` Represents the result of a calculation
+- [ ] `<p>` Defines a paragraph
+- [ ] `<param>` Defines a parameter for an `<object>` element
+- [ ] `<picture>` Contains zero or more `<source>` elements and one `<img>` element to offer alternative versions of an image for different display/device scenarios
+- [ ] `<pre>` Defines preformatted text
+- [ ] `<progress>` Represents the progress of a task
+- [ ] `<q>` Defines a short inline quotation
+- [ ] `<rp>` Provides fallback text for browsers that do not support ruby annotations
+- [ ] `<rt>` Defines the pronunciation of characters presented in a ruby annotation
+- [ ] `<ruby>` Represents a ruby annotation
+- [ ] `<s>` Represents content that is no longer accurate or relevant
+- [ ] `<samp>` Defines sample output from a computer program
+- [ ] `<script>` Defines a client-side script
+- [ ] `<section>` Defines a section in a document
+- [ ] `<select>` Defines a drop-down list
+- [ ] `<small>` Represents side-comments and small print
+- [ ] `<source>` Specifies multiple media resources for media elements (`<video>`, `<audio>`, or `<picture>`)
+- [ ] `<span>` Defines a generic inline container for phrasing content
+- [ ] `<strong>` Defines text with strong importance
+- [ ] `<style>` Contains style information for a document
+- [ ] `<sub>` Defines subscripted text
+- [ ] `<summary>` Defines a summary, caption, or legend for a `<details>` element
+- [ ] `<sup>` Defines superscripted text
+- [ ] `<svg>` Embeds SVG content
+- [ ] `<table>` Represents data in two dimensions or more
+- [ ] `<tbody>` Groups one or more rows in a table body
+- [ ] `<td>` Defines a cell in a table
+- [ ] `<template>` Holds content that is not to be rendered immediately when a page is loaded but may be instantiated later
+- [ ] `<textarea>` Defines a multiline input control (text area)
+- [ ] `<tfoot>` Groups one or more rows in a table footer
+- [ ] `<th>` Defines a header cell in a table
+- [ ] `<thead>` Groups one or more rows in a table header
+- [ ] `<time>` Defines a specific time (or datetime)
+- [ ] `<title>` Defines the title of the document, shown in a browser's title bar or on the page's tab
+- [ ] `<tr>` Defines a row of cells in a table
+- [ ] `<track>` Defines text tracks for media elements (`<video>` and `<audio>`)
+- [ ] `<u>` Represents text that is stylistically different from normal text, such as misspelled words or proper names in Chinese text
+- [ ] `<ul>` Defines an unordered list
+- [ ] `<var>` Defines a variable
+- [ ] `<video>` Embeds a media player for video playback
+- [ ] `<wbr>` Specifies where in a text it would be acceptable to add a line-break

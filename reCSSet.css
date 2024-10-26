@@ -1,0 +1,201 @@
+/* ================================
+   reCSSet v0.0.1
+================================= */
+
+/* -------------------------------
+   1. Variables & CSS Reset
+--------------------------------- */
+
+:root {
+        color-scheme: light dark;
+        --primary-color: light-dark(#4a90e2, #8ab4f8);
+        --secondary-color: light-dark(#2c3e50, #cfd8dc);
+        --text-color: light-dark(#2d2d2d, #e0e0e0);
+        --background-color: light-dark(#f5f5f5, #121212);
+        --background-card-color: light-dark(color-mix(in srgb, var(--background-color) 80%, hsl(0, 0%, 20%)), color-mix(in srgb, var(--background-color) 80%, hsl(0, 0%, 20%)));
+
+        --font-family: 'Helvetica Neue', Arial, sans-serif;
+        --line-height: 1.6;
+        --border-radius: 4px;
+        --transition-duration: 0.3s;
+        --spacing-vertical: 1rem;
+        --spacing-horizontal: 1rem;
+}
+
+/* Reset margins, paddings, and box-sizing */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+        list-style: none;
+}
+
+/* Remove default link styles */
+a {
+        text-decoration: none;
+        color: inherit;
+}
+
+/* -------------------------------
+   2. Layout 
+   --------------------------------- */
+
+body {
+        color: var(--text-color);
+        background-color: var(--background-color);
+        font-family: var(--font-family);
+        line-height: var(--line-height);
+}
+
+main {
+        margin: auto;
+}
+
+/* Responsiveness */
+@media (min-width: 576px) {
+        main {
+                max-width: 510px;
+                padding-right: 0;
+                padding-left: 0;
+        }
+}
+
+@media (min-width: 768px) {
+        main {
+                max-width: 700px;
+        }
+}
+
+@media (min-width: 1024px) {
+        main {
+                max-width: 950px;
+        }
+}
+
+@media (min-width: 1280px) {
+        main {
+                max-width: 1200px;
+        }
+}
+
+@media (min-width: 1536px) {
+        main {
+                max-width: 1450px;
+        }
+}
+
+header {}
+
+footer {}
+
+nav {}
+
+section {
+        margin-bottom: var(--spacing-vertical);
+}
+
+article {
+        margin-bottom: var(--spacing-vertical);
+        padding: var(--spacing-vertical, --spacing-horizontal);
+        border-radius: var(--border-radius);
+        background-color: var(--background-card-color);
+}
+
+article>header {}
+
+article>footer {}
+
+
+/* -------------------------------
+   3. Text 
+--------------------------------- */
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+        color: var(--secondary-color);
+        margin-bottom: 0.5em;
+        line-height: 1.2;
+}
+
+h1 {
+        font-size: 2em;
+}
+
+h2 {
+        font-size: 1.75em;
+}
+
+h3 {
+        font-size: 1.5em;
+}
+
+h4 {
+        font-size: 1.25em;
+}
+
+h5 {
+        font-size: 1em;
+}
+
+h6 {
+        font-size: 0.875em;
+}
+
+/* Paragraphs */
+p {
+        margin-bottom: 1em;
+}
+
+/* Links */
+a {
+        color: var(--primary-color);
+        transition: color var(--transition-duration);
+}
+
+a:hover,
+a:focus {
+        color: var(--secondary-color);
+}
+
+/* Blockquotes */
+
+
+/* -------------------------------
+   4. Lists
+--------------------------------- */
+
+/* -------------------------------
+   5. Forms
+--------------------------------- */
+
+/* -------------------------------
+   6. Tables
+--------------------------------- */
+
+
+/* -------------------------------
+   7. Visual media 
+--------------------------------- */
+
+
+/* -------------------------------
+   8. Code and Preformatted Text
+--------------------------------- */
+
+pre {
+        white-space: pre-line;
+}
+
+/* -------------------------------
+   9. Miscellaneous Elements
+--------------------------------- */

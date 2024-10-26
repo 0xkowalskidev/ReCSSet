@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <title>reCSSet</title>
+        <link rel="stylesheet" href="reCSSet.css">
+</head>
+
+<body>
+        <main>
+                <aside>
+
+                        <div>
+                                <button id="theme-toggle"></button>
+                        </div>
+
+                        <script>
+                                document.addEventListener('DOMContentLoaded', () => {
+                                        const button = document.getElementById('theme-toggle');
+                                        button.textContent = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'light' : 'dark';
+
+                                        button.addEventListener('click', () => {
+                                                const theme = document.documentElement.style.colorScheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                                                const newTheme = theme === 'dark' ? 'light' : 'dark';
+                                                button.textContent = newTheme === 'dark' ? 'light' : 'dark'
+                                                document.documentElement.style.colorScheme = newTheme;
+                                        });
+                                });
+                        </script>
+
+
+                        <nav>
+                                <ul>
+                                        <details>
+                                                <summary>Layout</summary>
+                                                <li><a href="#body">Body</a></li>
+                                                <li><a href="#navigation">Navigation</a></li>
+                                        </details>
+
+                                        <details>
+                                                <summary>Text</summary>
+                                                <li><a href="#headings">Headings</a></li>
+                                                <li><a href="#paragraphs">Paragraphs</a></li>
+                                                <li><a href="#links">Links</a></li>
+                                                <li><a href="#blockqoutes">Blockqoutes</a></li>
+                                        </details>
+
+
+                                        <details>
+                                                <summary>Controls</summary>
+                                                <li><a href="#forms">Forms</a></li>
+                                                <li><a href="#buttons">Buttons</a></li>
+                                        </details>
+                                </ul>
+                        </nav>
+                </aside>
+
+                <section id="layout">
+                        <h1>Layout</h1>
+
+                        <article id="navigation">
+                                <h2><em>Navigation</em></h2>
+                        </article>
+                </section>
+
+                <section id="text">
+                        <h1>Text</h1>
+
+                        <article id="headings">
+                                <header>
+                                        <h2><em>Headings</em></h2>
+
+                                        <p>Headings help to structure your content and improve readability.</p>
+                                </header>
+
+                                <h1>This is heading 1</h1>
+                                <h2>This is heading 2</h2>
+                                <h3>This is heading 3</h3>
+                                <h4>This is heading 4</h4>
+                                <h5>This is heading 5</h5>
+                                <h6>This is heading 6</h6>
+
+                                <footer>
+                                        <pre><code>
+                                                        <h1>This is heading 1</h1>
+                                                        <h2>This is heading 2</h2>
+                                                        <h3>This is heading 3</h3>
+                                                        <h4>This is heading 4</h4>
+                                                        <h5>This is heading 5</h5>
+                                                        <h6>This is heading 6</h6>
+                                                </code></pre>
+                                </footer>
+                        </article>
+
+                        <article id="paragraphs">
+                                <h2><em>Paragraphs</em></h2>
+                        </article>
+
+                        <article id="links">
+                                <h2><em>Links</em></h2>
+                        </article>
+
+                        <article id="blockqoutes">
+                                <h2><em>Blockqoutes</em></h2>
+                        </article>
+                </section>
+
+                <section id="controls">
+                        <article id="forms">
+                                <h2><em>Forms</em></h2>
+                        </article>
+
+                        <article id="buttons">
+                                <header>
+                                        <h2><em>Buttons</em></h2>
+                                </header>
+
+                                <button>Submit</button>
+
+                                <footer>
+                                        <pre><code>
+                                                        <button>Submit</button>
+                                        </pre></code>
+                                </footer>
+                        </article>
+                </section>
+        </main>
+
+        <script>
+                // This will make sure html in pre/code blocks is displayed as raw html
+                document.addEventListener("DOMContentLoaded", function () {
+                        const codeBlocks = document.querySelectorAll('code');
+                        codeBlocks.forEach(block => {
+                                block.textContent = block.innerHTML.trim();
+                        });
+                });
+        </script>
+</body>
+
+</html>
